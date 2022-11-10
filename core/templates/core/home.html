@@ -1,0 +1,32 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+<div class=" mt-3">
+    <div class="text-center">
+    <img src="{% static 'core/images/prashant.jpg' %}" alt="profilepic"
+    class="img-thumbnail" width="250px" height="50px">
+    </div>
+    <div class="text-white mt-3 mx-5 text-justify">
+        <h2 class="font-weight-bold st-font st-font">Hello,</h2>
+        <div class="px-4" style="line-height:2rem;">
+            <p style="text-indent:100px">I am <b class="text-warning">Prashant Kumar Sharma</b> 
+            having  one years  of  RPA  development  experience for  global  businesses,  I  offer 
+            the  technical  expertise  you  are  seeking for  rpa  developer  position.
+            </p>
+            <p>
+            Since earning my bechlor's degree in Electronics and telecommunication from 
+            North Maharashtra University, I have served as a RPA developer at<b class="text-warning">
+            Kintan Systech PVT Ltd.</b> one of the biggest premier digital marketing and development
+            firms.In this position I have led RPA projects from clients in
+            diverse industries including technology, hospitality, retail, pharmaceutical, manufacturing and
+            financial services.</p>
+          
+
+        </div>
+    </div>
+    <div class="text-center">
+        <a href="{% url 'contact' %}" class="btn btn-outline-warning my-2 mr-5">Hire Me</a>
+        <a href="{% url 'contact' %}" class="btn btn-outline-info my-2">Contact</a>
+    </div>
+</div>
+{% endblock content %}
